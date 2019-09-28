@@ -1,0 +1,23 @@
+#Python3
+#solution to https://www.hackerrank.com/challenges/ginorts/problem
+
+S = input()
+lower = ""
+upper = ""
+even = ""
+odd = ""
+for char in S:
+    if char.isupper():
+        upper += char
+    if char.islower():
+        lower += char
+    if char.isdigit():
+        if int(char)%2==0:
+            even += char
+        else:
+             odd += char
+upper = ''.join(sorted(upper))
+lower = ''.join(sorted(lower))
+odd = ''.join(sorted(odd))
+even = ''.join(sorted(even))
+print(lower+upper+odd+even)
