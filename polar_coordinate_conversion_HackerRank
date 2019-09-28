@@ -1,0 +1,9 @@
+#Python 3
+#Solution to https://www.hackerrank.com/challenges/polar-coordinates/problem
+#prints absolute value and phase of a complex number to be expressed in polar coords.
+
+import cmath
+
+complex_num = complex(input()) #converts input to complex number type
+print (abs(complex_num)) #radius
+print (cmath.phase(complex_num)) #angle
